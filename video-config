@@ -1,0 +1,15 @@
+# the syntax for using this configuration file is: youtube-dl --config-location ~/.config/youtube-dl/video-config <link>
+# save all videos under ~/Media/Videos directory
+-o ~/Media/Videos/%(title)s.%(ext)s
+
+#including thumbnails
+--write-thumbnail
+
+#includes metadata
+--add-metadata
+
+#alternative method of adding metadata in corresponding json file
+#youtube-dl --write-info-json
+
+#ignores errors
+-i

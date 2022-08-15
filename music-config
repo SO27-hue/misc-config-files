@@ -1,0 +1,18 @@
+# the syntax for using this configuration file is: youtube-dl --config-location ~/.config/youtube-dl/music-config <link>
+# Save all audion under ~/Music directory
+-o ~/Music/%(title)s.%(ext)s
+
+# extract the best audio
+-f bestaudio
+
+# Ignores errors
+-i
+
+# Adds metadata
+--add-metadata
+
+# Alternative method for adding metadata (creates separate json file rather than including it in the same file as the audio)
+#--write-info-json
+
+# Downloads thumbnails
+--write-thumbnail
